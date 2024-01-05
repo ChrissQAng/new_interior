@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*img {
+  max-width: 100%;
+} */
+/* ------------basic */
+@font-face {
+  font-family: nixi;
+  src: url(../fonts/NixieOne-Regular.ttf);
+}
+@font-face {
+  font-family: aleg;
+  src: url(../fonts/Alegreya-VariableFont_wght.ttf);
+}
+h2 {
+  font-family: nixi, Arial, Helvetica, sans-serif;
+  font-size: 56px;
+  color: white;
+}
+h3 {
+  font-family: aleg, Arial, Helvetica, sans-serif;
+  font-size: ;
+  font-size: 22px;
+}
+h4 {
+  font-family: aleg, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+h5 {
+}
+.viewall {
+  font-family: Helvetica;
+  font-size: 18px;
+  border: 1px solid #3a4f52;
+  color: #3a4f52;
+  padding: 5px 10px;
+}
+
+/* -------header */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+header {
+  background: url(../img/background\ header.png) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-family: aleg, Arial, Helvetica, sans-serif;
+  font-size: 49px;
+}
+header p {
+  font-family: aleg, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+header div {
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------- section 1 */
+
+.sec1 {
+  height: 100vh;
+  color: #3a4f52;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headline {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery {
+  margin-top: 50px;
+  width: 80vw;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 360px;
+  height: 215px;
+  float: left;
+  object-fit: cover;
+  object-position: center;
+}
