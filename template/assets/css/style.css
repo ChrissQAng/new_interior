@@ -48,6 +48,7 @@ h5 {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-left: 30px;
   height: 100px;
 }
 header {
@@ -295,8 +296,23 @@ textarea {
   width: 100%;
   background-color: transparent;
   margin-top: 20px;
-  border-color: aquamarine;
+  border-color: white;
+  box-shadow: none;
+  font-family: monospace, Arial, Helvetica, sans-serif;
 }
 ::placeholder {
   color: white;
+}
+
+/* -------------- Footer */
+
+footer {
+  height: 200px;
+  background-color: #2b3e51;
+  color: white;
+}
+footer p {
+  padding-top: 50px;
+  margin-left: 0px;
+  font-family: Helvetica;
 }
