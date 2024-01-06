@@ -15,16 +15,16 @@
   font-family: aleg;
   src: url(../fonts/Alegreya-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: helvetica-n;
+  src: url(../fonts/Helvetica\ Neue\ Regular.otf);
+}
 h2 {
   font-family: nixi, Arial, Helvetica, sans-serif;
   font-size: 56px;
   color: white;
 }
-h3 {
-  font-family: aleg, Arial, Helvetica, sans-serif;
-  font-size: ;
-  font-size: 22px;
-}
+
 h4 {
   font-family: aleg, Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -36,8 +36,9 @@ h5 {
   font-size: 30px;
 }
 .viewall {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
   font-size: 18px;
+  text-decoration: none;
   border: 1px solid #3a4f52;
   color: #3a4f52;
   padding: 5px 10px;
@@ -48,8 +49,25 @@ h5 {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-left: 30px;
+  margin-right: 30px;
   height: 100px;
+}
+nav img {
+  width: 50px;
+  height: 60px;
+  margin-right: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: aleg, Arial, Helvetica, sans-serif;
+  font-size: 49px;
+}
+nav a span {
+  font-size: 60px;
 }
 header {
   background: url(../img/background\ header.png) center no-repeat;
@@ -57,29 +75,27 @@ header {
   height: 100vh;
   color: white;
 }
-a {
-  color: white;
-  text-decoration: none;
-  font-family: aleg, Arial, Helvetica, sans-serif;
-  font-size: 49px;
-}
 header p {
   font-family: aleg, Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
 header div {
-  padding-top: 20vh;
-  display: flex;
+  /* padding-top: 20vh; */
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 10px; */
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 230px auto 0 auto;
 }
 
 /* ---------- section 1 */
 
 .sec1 {
-  height: 100vh;
+  height: 110vh;
   color: #3a4f52;
   display: flex;
   flex-direction: column;
@@ -88,12 +104,13 @@ header div {
 }
 .headline {
   height: 50px;
+  width: 1120px;
   display: flex;
   justify-content: space-between;
 }
 .gallery {
-  margin-top: 50px;
-  width: 80vw;
+  margin-top: 100px;
+  width: 1120px;
   height: 40vh;
   display: flex;
   flex-wrap: wrap;
@@ -125,7 +142,7 @@ header div {
   align-items: center;
   justify-content: space-around;
   width: 1170px;
-  height: 383px;
+  height: 450px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .sec2headline {
@@ -139,15 +156,13 @@ header div {
 .sec2 article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   width: 33%;
-  gap: 50px;
+  gap: 20px;
 }
 
 .sec2 p {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.9;
@@ -155,38 +170,50 @@ header div {
 .sec2 img {
   width: 60px;
   height: 60px;
+  margin-bottom: -15px;
 }
 
 /* ------------- section 3 */
 
 .sec3 {
-  height: 100vh;
+  height: 90vh;
   color: #3a4f52;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .sec3head {
-  margin: 150px 150px 200px 150px;
+  /* margin: 150px 150px 200px 150px; */
+  width: 1100px;
   display: flex;
   justify-content: space-between;
 }
 .sec3head a {
-  padding-right: 100px;
+  /* padding-right: 100px; */
+}
+.sec3articles {
+  width: 1100px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 30px; */
+  /* margin-left: 150px; */
 }
 .sec3 img {
   width: 360px;
   height: 215px;
-  float: left;
+  /* float: left;
   object-fit: cover;
-  object-position: center;
+  object-position: center; */
 }
-.sec3articles {
-  display: flex;
-  gap: 30px;
-  margin-left: 150px;
-}
+
 .sec3 article {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  align-items: center;
+  width: 360px;
   gap: 22px;
 }
 
@@ -236,8 +263,7 @@ header div {
   justify-content: center;
   align-items: center;
 }
-.sec5box {
-}
+
 .sec5head {
   text-align: center;
 }
