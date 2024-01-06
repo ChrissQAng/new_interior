@@ -172,7 +172,7 @@ header div {
 /* ------------- section 3 */
 
 .sec3 {
-  height: 90vh;
+  height: 110vh;
   color: #3a4f52;
   display: flex;
   flex-direction: column;
@@ -314,10 +314,11 @@ textarea {
   width: 100%;
   background-color: transparent;
   margin-top: 20px;
-  border-color: white;
-  box-shadow: none;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 4px;
   resize: none;
-  font-family: monospace, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
 ::placeholder {
   color: white;
